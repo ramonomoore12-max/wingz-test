@@ -41,6 +41,10 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'django_filters',
+    # Project apps
+    'users',
+    'rides',
+    'ride_events',
 ]
 
 REST_FRAMEWORK = {
