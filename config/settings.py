@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'django_filters',
-    # Project apps
     'users',
     'rides',
     'ride_events',
@@ -73,6 +72,8 @@ DATABASES = {
         'PORT': config('DB_PORT', default='5432'),
     }
 }
+
+AUTH_USER_MODEL = 'users.User'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
