@@ -32,6 +32,14 @@ class Ride(models.Model):
 
     class Meta:
         db_table = 'ride'
+        indexes = [
+            models.Index(fields=['status'], name='idx_ride_status'),
+            models.Index(fields=['pickup_time'], name='idx_ride_pickup_time'),
+            models.Index(
+                fields=['id_rider', 'status'],
+                name='idx_ride_rider_status',
+            ),
+        ]
 
     def __str__(self):
         return f'Ride {self.id_ride} [{self.status}]'

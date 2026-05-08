@@ -16,6 +16,12 @@ class RideEvent(models.Model):
 
     class Meta:
         db_table = 'ride_event'
+        indexes = [
+            models.Index(
+                fields=['id_ride', 'created_at'],
+                name='idx_rideevent_ride_createdat',
+            ),
+        ]
 
     def __str__(self):
         return f'Event {self.id_ride_event} on Ride {self.id_ride_id}'

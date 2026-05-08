@@ -45,6 +45,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     role = models.CharField(max_length=50, choices=ROLE_CHOICES)
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
+    # unique=True already creates the index needed for rider_email filtering.
     email = models.EmailField(unique=True)
     phone_number = models.CharField(max_length=20)
     is_staff = models.BooleanField(default=False)
