@@ -1,0 +1,67 @@
+{
+  "info": {
+    "_postman_id": "7e4b8d31-1f3e-4960-a657-e7014d4b240e",
+    "name": "Wingz",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "49994719",
+    "_collection_link": "https://go.postman.co/collection/49994719-7e4b8d31-1f3e-4960-a657-e7014d4b240e?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Auth",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Token",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Ride",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Ride Email",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Ascending/Descending",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Des",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Des & Time",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}
